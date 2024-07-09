@@ -8,9 +8,9 @@
 
    ```sh
    mkdir build
-   cd build
-   cmake ..
-   make
+   rm -rf build
+   cmake -B build
+   cmake --build build -j8
    ```
 
 4. **运行程序**：执行生成的可执行文件：
